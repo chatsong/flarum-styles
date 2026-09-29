@@ -2798,28 +2798,39 @@ body.dark .cs-view-badge,
     box-shadow: none !important;
 }
 /* ═══════════════════════════════════════════════════════════
-   CHATSONG APP-STYLE DISCUSSION & REPLIES (MOBIEL)
+   CHATSONG EXACTE FLARUM POST & APP-STYLE MATCH
    ═══════════════════════════════════════════════════════════ */
+
+/* Standaard Flarum post-structuur voor alle schermen */
+.Post {
+    background: var(--cs-card-bg, #ffffff) !important;
+    border: 1px solid var(--cs-border, rgba(0, 0, 0, 0.08)) !important;
+    border-radius: var(--cs-radius, 12px) !important;
+    box-shadow: var(--cs-shadow, 0 2px 12px rgba(0, 0, 0, 0.04)) !important;
+    margin-bottom: 16px !important;
+    padding: 18px !important;
+}
+
+.Post-body {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    color: var(--cs-text, #1a1a1a) !important;
+}
+
+/* Zorg dat de acties onderaan de post mooi uitlijnen zoals op Flarum */
+.Post-footer, .Post-actions {
+    margin-top: 12px !important;
+    padding-top: 8px !important;
+    border-top: 1px solid var(--cs-border, rgba(0, 0, 0, 0.04)) !important;
+}
+
+/* Extra fijne marges specifiek voor mobiel */
 @media screen and (max-width: 768px) {
-    /* Zorg dat de discussiepagina netjes past zonder vreemde witruimtes */
     .DiscussionPage-discussion {
         padding: 8px !important;
     }
-    
-    /* Geef elke losse post/reactie een strakke, afgeronde kaart-look (app-stijl) */
     .Post {
-        background: #ffffff !important;
-        border-radius: var(--cs-radius) !important;
-        margin-bottom: 12px !important;
         padding: 14px !important;
-        box-shadow: var(--cs-shadow) !important;
-        border: 1px solid var(--cs-border) !important;
-    }
-    
-    /* Optimaliseer de tekst in de reacties voor maximale leesbaarheid (Niveau 10) */
-    .Post-body {
-        font-size: 14px !important;
-        line-height: 1.5 !important;
-        color: var(--cs-text) !important;
+        margin-bottom: 12px !important;
     }
 }
