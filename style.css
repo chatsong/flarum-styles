@@ -2829,11 +2829,3 @@ body.dark .cs-view-badge,
 .PostStream-item .Post-body p:last-child {
     margin-bottom: 0;
 }
-/* Fix zichtbaarheid sorteerknoppen op de gebruikerspagina */
-.UserDirectoryPage-sort, 
-.item-sort, 
-.UserDirectory-sort {
-  display: flex !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-}
