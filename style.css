@@ -2797,3 +2797,11 @@ body.dark .cs-view-badge,
     border-bottom: none;
     box-shadow: none !important;
 }
+/* Voorkom dat dropdown-menu's in de discussielijst verspringen bij hover of selectie */
+.DiscussionListItem .Dropdown-menu, 
+.dropdown-menu {
+    position: absolute !important;
+    left: 20px !important;
+    right: auto !important;
+    transform: none !important;
+}
