@@ -2813,3 +2813,19 @@ body.dark .cs-view-badge,
     z-index: 9999 !important;
     transform: none !important;
 }
+/* Zorg voor de juiste Flarum post-body stijlen in de thread/feed */
+.PostStream-item .Post-body {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: inherit;
+    word-wrap: break-word;
+}
+
+/* Zorg dat alinea's binnen de posts dezelfde doorlopende lijn houden */
+.PostStream-item .Post-body p {
+    margin-bottom: 1em;
+}
+
+.PostStream-item .Post-body p:last-child {
+    margin-bottom: 0;
+}
