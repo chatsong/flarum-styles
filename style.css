@@ -2797,20 +2797,19 @@ body.dark .cs-view-badge,
     border-bottom: none;
     box-shadow: none !important;
 }
-/* Blokkeer hover-conflicten die het dropdown-menu laten knipperen */
-.Dropdown-menu {
+/* Zorg dat het dropdown-menu stabiel is en alle items laat zien */
+.DiscussionListItem .Dropdown-menu {
     display: none !important;
 }
 
-.Dropdown.open .Dropdown-menu,
-.Dropdown.dropdown.open .Dropdown-menu {
+.DiscussionListItem .Dropdown.open .Dropdown-menu {
     display: block !important;
     position: absolute !important;
-    z-index: 2000 !important;
+    top: auto !important;
+    bottom: 100% !important; /* Opent naar boven toe als het onderin staat, of pas aan naar top: 100% */
+    right: 0 !important;
+    max-height: 280px !important;
+    overflow-y: auto !important;
+    z-index: 9999 !important;
     transform: none !important;
-}
-
-/* Zorg dat de knop zelf stabiel blijft */
-.Dropdown > .Button {
-    pointer-events: auto !important;
 }
