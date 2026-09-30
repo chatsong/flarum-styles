@@ -2829,66 +2829,52 @@ body.dark .cs-view-badge,
 .PostStream-item .Post-body p:last-child {
     margin-bottom: 0;
 }
-/* Zorg dat de Last Visitors widget netjes op elk profiel laadt */
-.UserPage-nav .item-lastViewedUsers,
-.UserPage-nav fieldset.lastUsers {
-  display: block !important;
-  margin-top: 15px !important;
-  padding: 10px 14px !important;
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  border-radius: 10px !important;
-  background: rgba(0, 0, 0, 0.2) !important;
-}
-
-.UserPage-nav fieldset.lastUsers legend {
-  display: block !important;
-  font-size: 0.75em !important;
-  font-weight: 700 !important;
-  text-transform: uppercase !important;
-  color: rgba(255, 255, 255, 0.6) !important;
-  margin-bottom: 8px !important;
-  border: none !important;
-  width: auto !important;
-}
-
-.UserPage-nav fieldset.lastUsers ul {
+/* Specifieke styling voor de Last Visitors <ul> */
+.UserPage-nav .lastUsers ul {
   list-style: none !important;
   padding: 0 !important;
-  margin: 0 !important;
+  margin: 10px 0 0 0 !important;
   display: flex !important;
   flex-direction: column !important;
-  gap: 8px !important;
+  gap: 10px !important;
 }
 
-.UserPage-nav fieldset.lastUsers ul li {
+.UserPage-nav .lastUsers ul li {
+  display: block !important;
   margin: 0 !important;
 }
 
+/* De container binnen elke <li> uit jouw code */
 .UserPage-nav .item-lastUser-content {
   display: flex !important;
   align-items: center !important;
-  gap: 8px !important;
+  gap: 10px !important;
+  text-decoration: none !important;
 }
 
 .UserPage-nav .item-lastUser-content div {
   display: flex !important;
   flex-direction: column !important;
+  justify-content: center !important;
 }
 
-.UserPage-nav .username {
+.UserPage-nav .item-lastUser-content .username {
   font-size: 0.85em !important;
   font-weight: 600 !important;
   color: #ffffff !important;
+  line-height: 1.2 !important;
 }
 
-.UserPage-nav .lastUser-visited {
-  font-size: 0.7em !important;
-  color: rgba(255, 255, 255, 0.5) !important;
+.UserPage-nav .item-lastUser-content .lastUser-visited {
+  font-size: 0.72em !important;
+  color: rgba(255, 255, 255, 0.55) !important;
+  line-height: 1.2 !important;
 }
 
-.UserPage-nav .Avatar {
-  width: 30px !important;
-  height: 30px !important;
+.UserPage-nav .item-lastUser-content .Avatar {
+  width: 32px !important;
+  height: 32px !important;
   border-radius: 50% !important;
   object-fit: cover !important;
+  flex-shrink: 0 !important;
 }
