@@ -2829,3 +2829,17 @@ body.dark .cs-view-badge,
 .PostStream-item .Post-body p:last-child {
     margin-bottom: 0;
 }
+/* ============================================================ */
+/* FIX: AVATAR OVERLAP MET LAST VISITORS OP PROFIELPAGINA'S     */
+/* ============================================================ */
+@media (min-width: 768px) {
+  .UserPage-content {
+    padding-left: 65px !important;
+  }
+
+  .UserPage-side,
+  .UserPage-nav {
+    position: relative;
+    z-index: 2;
+  }
+}
