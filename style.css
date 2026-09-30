@@ -2858,16 +2858,4 @@ body.dark .cs-view-badge,
     z-index: 1 !important;
   }
 }
-/* Forceer dat de share-knop zichtbaar en klikbaar is */
-li.item-share, .item-share button {
-    display: inline-flex !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    pointer-events: auto !important;
-}
 
-/* Zorg dat de knop niet door andere elementen wordt afgeschermd */
-.Post-actions .item-share {
-    z-index: 10;
-    position: relative;
-}
