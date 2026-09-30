@@ -2829,25 +2829,24 @@ body.dark .cs-view-badge,
 .PostStream-item .Post-body p:last-child {
     margin-bottom: 0;
 }
-/* Herstel Last Visitors in de Profiel Zijbalk */
+/* Zorg dat de Last Visitors widget netjes op elk profiel laadt */
 .UserPage-nav .item-lastViewedUsers,
 .UserPage-nav fieldset.lastUsers {
   display: block !important;
-  margin-top: 20px !important;
-  padding: 12px 15px !important;
-  border: 1px solid rgba(255, 255, 255, 0.12) !important;
-  border-radius: 12px !important;
+  margin-top: 15px !important;
+  padding: 10px 14px !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 10px !important;
   background: rgba(0, 0, 0, 0.2) !important;
 }
 
 .UserPage-nav fieldset.lastUsers legend {
   display: block !important;
-  font-size: 0.8em !important;
+  font-size: 0.75em !important;
   font-weight: 700 !important;
   text-transform: uppercase !important;
-  letter-spacing: 0.5px !important;
   color: rgba(255, 255, 255, 0.6) !important;
-  margin-bottom: 10px !important;
+  margin-bottom: 8px !important;
   border: none !important;
   width: auto !important;
 }
@@ -2858,18 +2857,17 @@ body.dark .cs-view-badge,
   margin: 0 !important;
   display: flex !important;
   flex-direction: column !important;
-  gap: 10px !important;
+  gap: 8px !important;
 }
 
 .UserPage-nav fieldset.lastUsers ul li {
-  display: block !important;
   margin: 0 !important;
 }
 
 .UserPage-nav .item-lastUser-content {
   display: flex !important;
   align-items: center !important;
-  gap: 10px !important;
+  gap: 8px !important;
 }
 
 .UserPage-nav .item-lastUser-content div {
@@ -2880,17 +2878,17 @@ body.dark .cs-view-badge,
 .UserPage-nav .username {
   font-size: 0.85em !important;
   font-weight: 600 !important;
-  color: #fff !important;
+  color: #ffffff !important;
 }
 
 .UserPage-nav .lastUser-visited {
-  font-size: 0.75em !important;
+  font-size: 0.7em !important;
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
 .UserPage-nav .Avatar {
-  width: 32px !important;
-  height: 32px !important;
+  width: 30px !important;
+  height: 30px !important;
   border-radius: 50% !important;
   object-fit: cover !important;
 }
