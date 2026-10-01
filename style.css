@@ -2858,7 +2858,26 @@ body.dark .cs-view-badge,
     z-index: 1 !important;
   }
 }
-/* Verberg de 'Write a Reply...' knop specifiek bij blogartikelen */
-.FlarumBlog-Article-Comments .ReplyPlaceholder {
-    display: none !important;
+/* Maak de social media 'Add buttons' badge opvallend en goed zichtbaar */
+.UserCard-info .Badge--social {
+    background-color: #1DB954 !important;
+    color: #ffffff !important;
+    padding: 6px 14px !important;
+    border-radius: 20px !important;
+    box-shadow: 0 4px 15px rgba(29, 185, 84, 0.4) !important;
+    transition: all 0.2s ease-in-out !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+}
+
+.UserCard-info .Badge--social:hover {
+    background-color: #1ed760 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(29, 185, 84, 0.6) !important;
+}
+
+.UserCard-info .Badge--social .Badge-icon {
+    font-size: 14px !important;
+    color: #ffffff !important;
 }
