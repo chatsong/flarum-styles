@@ -2858,4 +2858,7 @@ body.dark .cs-view-badge,
     z-index: 1 !important;
   }
 }
-
+/* Verberg de onderste reactieknop/placeholder bij blogartikelen */
+.FlarumBlog-Article-Comments .Post.ReplyPlaceholder {
+    display: none !important;
+}
