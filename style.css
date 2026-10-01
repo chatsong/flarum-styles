@@ -2858,3 +2858,227 @@ body.dark .cs-view-badge,
     z-index: 1 !important;
   }
 }
+/* ============================================================
+   CHATSONG - COMPLETE FOF SOCIAL PROFILE STYLING (ALL-IN-ONE)
+   ============================================================ */
+
+/* 1. DE GROENE INSTELLINGENKNOP OP HET PROFIEL (+ ADD / EDIT SOCIALS) */
+.UserCard-info .item-fofsocialprofile .Badge--social,
+.UserCard-info .Badge--social.social-settings,
+.UserCard-info .Badge--social.null-social-settings,
+div.Badge.Badge--social.social-settings,
+div.Badge.Badge--social.null-social-settings {
+    background-color: #1DB954 !important;
+    color: #ffffff !important;
+    width: auto !important;
+    max-width: max-content !important;
+    height: auto !important;
+    padding: 10px 18px !important;
+    border-radius: 25px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 4px 12px rgba(29, 185, 84, 0.4) !important;
+    border: none !important;
+    cursor: pointer !important;
+    margin: 8px auto !important;
+}
+
+.UserCard-info .Badge--social .Badge-icon,
+div.Badge.Badge--social .Badge-icon {
+    display: inline-block !important;
+    color: #ffffff !important;
+    font-size: 16px !important;
+}
+
+/* Tekst voor knop zonder ingestelde socials */
+.UserCard-info .Badge--social.null-social-settings::after {
+    content: " + Add Socials" !important;
+    color: #ffffff !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    margin-left: 6px !important;
+}
+
+/* Tekst voor knop mét ingestelde socials */
+.UserCard-info .Badge--social.social-settings::after {
+    content: " Edit Socials" !important;
+    color: #ffffff !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    margin-left: 6px !important;
+}
+
+/* 2. LOSSE SOCIAL MEDIA FAVICONS (INSTAGRAM, SPOTIFY, ETC.) */
+.UserCard-info .item-fofsocialprofile a .Badge--social,
+div.Badge.Badge--social.social-button {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    border-radius: 50% !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 4px !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+    background-size: 60% auto !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.UserCard-info .item-fofsocialprofile a .Badge--social .Badge-icon,
+div.Badge.Badge--social.social-button .Badge-icon {
+    display: none !important;
+}
+
+/* 3. BEWERKVENSTER (MODAL) + HELPER TEKST */
+.SocialButtonsModal .Modal-body::before {
+    content: "💡 Paste the web link (URL) of your Spotify, YouTube, TikTok or SoundCloud profile below!";
+    display: block;
+    background: rgba(29, 185, 84, 0.15);
+    border-left: 4px solid #1DB954;
+    color: #ffffff;
+    padding: 12px 15px;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 18px;
+    font-weight: 500;
+}
+
+.SocialButtonsModal .Form-group input {
+    border-radius: 10px !important;
+    padding: 10px 14px !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    font-size: 14px !important;
+}
+
+.EditSocialButtons-add {
+    background: #28a745 !important;
+    color: #ffffff !important;
+    border-radius: 12px !important;
+    font-weight: bold !important;
+    padding: 12px 16px !important;
+    font-size: 14px !important;
+    border: none !important;
+    box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3) !important;
+    margin-bottom: 10px !important;
+    width: 100% !important;
+    display: block !important;
+}
+
+.EditSocialButtons-add::after {
+    content: " Add new link" !important;
+}
+
+.EditSocialButtons-del {
+    background: #dc3545 !important;
+    color: #ffffff !important;
+    border-radius: 12px !important;
+    font-weight: bold !important;
+    padding: 12px 16px !important;
+    font-size: 14px !important;
+    border: none !important;
+    box-shadow: 0 4px 10px rgba(220, 53, 69, 0.3) !important;
+    margin-bottom: 15px !important;
+    width: 100% !important;
+    display: block !important;
+}
+
+.EditSocialButtons-del::after {
+    content: " Remove link" !important;
+}
+
+.EditSocialButtons-save {
+    background: linear-gradient(135deg, #8a2be2, #6a11cb) !important;
+    color: #ffffff !important;
+    border-radius: 12px !important;
+    font-weight: bold !important;
+    font-size: 15px !important;
+    padding: 12px 20px !important;
+    border: none !important;
+    box-shadow: 0 4px 12px rgba(138, 43, 226, 0.4) !important;
+    width: 100% !important;
+    float: none !important;
+    margin-top: 5px !important;
+}
+
+/* ============================================================
+   CHATSONG - USERCARD HIGH CONTRAST & DUIDELIJKE STRUCTUUR
+   ============================================================ */
+
+/* 1. HOOFDCONTAINER VAN DE PROFIELKAART */
+.UserCard {
+    background: #141418 !important; /* Strakke donkere achtergrond */
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 20px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+    padding: 20px !important;
+    color: #ffffff !important;
+}
+
+/* 2. GEBRUIKERSNAAM EN AVATAR */
+.UserCard-identity .username {
+    color: #ffffff !important;
+    font-weight: 800 !important;
+    font-size: 22px !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* 3. GROEPEN, RANGEN EN BADGES SCHEIDEN */
+.UserCard-ranks, 
+.UserCard-badges {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.UserCard-badges .rankLabel {
+    border-radius: 10px !important;
+    padding: 4px 10px !important;
+    font-weight: bold !important;
+    font-size: 12px !important;
+    color: #ffffff !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* 4. INFORMATIE BLOKKEN (PUNTEN, VOLGERS, VIEWS, ETC.) */
+.UserCard-info {
+    color: #ffffff !important;
+}
+
+.UserCard-info > li {
+    background: rgba(255, 255, 255, 0.06) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 12px !important;
+    padding: 10px 14px !important;
+    margin-bottom: 8px !important;
+    color: #ffffff !important;
+    font-size: 13px !important;
+}
+
+/* Bio blok opvallend maken */
+.UserCard-info .item-bio {
+    background: rgba(0, 0, 0, 0.4) !important;
+    border-left: 4px solid #1DB954 !important;
+    border-radius: 10px !important;
+    padding: 12px 16px !important;
+}
+
+.UserCard-info .item-bio p, 
+.UserCard-info .item-bio a {
+    color: #ffffff !important;
+}
+
+/* PAARSE ACHTERGROND OVERDRUKKEN MET DONKERGRIJS */
+.UserCard,
+.UserCard-profile,
+.UserHero,
+.Hero.UserHero {
+    background: #141418 !important;
+    background-color: #141418 !important;
+}
